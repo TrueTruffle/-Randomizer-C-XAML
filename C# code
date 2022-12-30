@@ -33,7 +33,7 @@ namespace Randomazer
 
             int from1 = Convert.ToInt32(fromNumber.Text);
             int to1 = Convert.ToInt32(toNumber.Text);
-            int value = random.Next(from1, to1);
+            int value = random.Next(from1, to1+1);
             string g = value.ToString();
             result.Text = g;
             
