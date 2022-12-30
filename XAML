@@ -1,0 +1,21 @@
+<Window x:Class="Randomazer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Randomazer"
+        mc:Ignorable="d"
+        Title="Рандомайзер" Height="450" Width="500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Content="Рандомайзер" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Cooper Black" FontSize="36" Margin="0,0,0,50"/>
+        <TextBox x:Name="fromNumber" HorizontalAlignment="Center" Text="От" TextWrapping="Wrap" VerticalAlignment="Center" Width="120" FontFamily="Cooper Black" FontSize="20" Margin="-3,150,300,0" PreviewTextInput="fromNumber_PreviewTextInput"/>
+        <TextBox x:Name="toNumber" HorizontalAlignment="Center" Text="До" TextWrapping="Wrap" VerticalAlignment="Center" Width="120" FontFamily="Cooper Black" FontSize="20" Margin="300,150,0,0" PreviewTextInput="toNumber_PreviewTextInput"/>
+        <Button Content="Зарандомить!" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" FontFamily="Cooper Black" FontSize="36" Margin="0,0,0,152" Click="Button_Click"/>
+        <TextBlock x:Name="result" HorizontalAlignment="Center" Grid.Row="1" Text="Здесь будет результат" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="30" FontFamily="Cooper Black"/>
+
+    </Grid>
+</Window>
