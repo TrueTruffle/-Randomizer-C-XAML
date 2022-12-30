@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\pygsi\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\pygsi\\.nuget\\packages"
+    ]
+  }
+}
